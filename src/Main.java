@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -5,6 +6,7 @@ public class Main {
         MusicPlayer musicPlayer = new MusicPlayer();
         Scanner scanner = new Scanner(System.in);
 
+          try {
         int choose;
         do {
             System.out.println("--------------------------------------");
@@ -58,6 +60,11 @@ public class Main {
                     System.out.println("Invalid choice. Please enter again.");
             }
         } while (choose != 10);
+         } catch (InputMismatchException ea) {
+              System.out.println("Incorrect input, please try again!");
+
+          }
+
     }
 }
 

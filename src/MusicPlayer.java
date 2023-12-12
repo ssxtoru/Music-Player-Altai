@@ -26,7 +26,7 @@ public class MusicPlayer {
             String artist = scanner.nextLine();
 
             System.out.println("Enter duration in minutes:");
-            double duration = scanner.nextDouble();
+            String duration = scanner.nextLine();
             scanner.nextLine();
 
             Music newSong = new Music(title, artist, duration);

@@ -1,9 +1,9 @@
 public class Music {
     private String songTitle;
     private String artist;
-    private double duration;
+    private String duration;
 
-    public Music(String songTitle, String artist, double duration) {
+    public Music(String songTitle, String artist, String duration) {
         this.songTitle = songTitle;
         this.artist = artist;
         this.duration = duration;
@@ -17,7 +17,7 @@ public class Music {
         return artist;
     }
 
-    public double getDuration() {
+    public String getDuration() {
         return duration;
     }
 
